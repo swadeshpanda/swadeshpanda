@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Swadesh Ranjan Panda
-- 👀 I’m Currently Working on Data Analyst Projects 
+- 👀 I’m Currently Working on Data Analysis Projects 
 - 🌱 I’m currently learning Full Stack Data Science.
-- 💞️ I’m looking to collaborate on OpenSource and Team Projects related to Data Visualizations,BI reports and ML Projects 
+- 💞️ I’m looking to collaborate on OpenSource and Team Projects related to Data Visualizations and BI reports 
 - 📫 How to reach me - swadeshpanda95@gmail.com
 
 
