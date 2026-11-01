@@ -1,16 +1,10 @@
-<a id="top"></a>
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A7EA4,50:8A63D2,100:FF694B&height=190&section=header&text=Swadesh%20Ranjan%20Panda&fontColor=ffffff&fontSize=44&fontAlignY=38&desc=Data%20%26%20Analytics%20Engineer%20%C2%B7%20Berlin&descAlignY=60&descSize=20" alt="Swadesh Ranjan Panda banner" width="100%">
+# 👋 Hi, I'm Swadesh Ranjan Panda
 
-<a href="https://github.com/swadeshpanda">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=0A7EA4&center=true&vCenter=true&width=720&lines=Turning+raw+data+into+trusted+insights;Building+tested+dbt+models+on+Databricks;Analytics+Engineer+%C2%B7+Berlin+%F0%9F%87%A9%F0%9F%87%AA;Open+to+full-time+roles" alt="Typing animation">
-</a>
+### Data & Analytics Engineer · Berlin 🇩🇪
 
 *I turn messy raw data into tested, documented models and dashboards that people can trust.*
-
-**[🧑‍💻 About](#about) · [🧰 Stack](#stack) · [🗺️ How I work](#how) · [⭐ Project](#project) · [🎯 Focus](#focus) · [📊 Stats](#stats) · [📬 Contact](#contact)**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-swadeshrp-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swadeshrp/)
 [![Email](https://img.shields.io/badge/Email-swadeshpanda95%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:swadeshpanda95@gmail.com)
@@ -24,8 +18,6 @@
 
 ---
 
-<a id="about"></a>
-
 ## 🧑‍💻 About me
 
 - 💼 **Working Student, Analytics Engineer at Kleinanzeigen** (Berlin)
@@ -35,8 +27,6 @@
 - 📬 **Open to full-time roles** in data engineering and analytics engineering
 
 ---
-
-<a id="stack"></a>
 
 ## 🧰 Tech stack
 
@@ -64,8 +54,6 @@
 ![Git](https://img.shields.io/badge/Git%20%2B%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
-
-<a id="how"></a>
 
 ## 🗺️ How I work
 
@@ -97,8 +85,6 @@ flowchart LR
 ```
 
 ---
-
-<a id="project"></a>
 
 ## ⭐ Featured project
 
@@ -155,8 +141,6 @@ flowchart LR
 
 ---
 
-<a id="focus"></a>
-
 ## 🎯 What I'm focused on
 
 | 🔭 Now | 🌱 Learning | 🤝 Looking for |
@@ -167,30 +151,19 @@ flowchart LR
 
 ---
 
-<a id="stats"></a>
-
-## 📊 GitHub stats
+## 📊 GitHub activity
 
 <div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=swadeshpanda&theme=tokyonight&hide_border=true" alt="GitHub streak" width="640">
-
-<img src="https://ghchart.rshah.org/0a7ea4/swadeshpanda" alt="Contribution chart" width="100%">
 
 ![Followers](https://img.shields.io/github/followers/swadeshpanda?style=for-the-badge&logo=github&color=0a7ea4)
 ![Repos](https://img.shields.io/badge/public%20repos-14-8a63d2?style=for-the-badge&logo=github)
 ![Stars](https://img.shields.io/github/stars/swadeshpanda/Thelook-ecommerce-dbt-databricks?style=for-the-badge&logo=github&color=E67E22&label=project%20stars)
-![Last commit](https://img.shields.io/github/last-commit/swadeshpanda/Thelook-ecommerce-dbt-databricks?style=for-the-badge&logo=git&color=2ea44f&label=last%20project%20commit)
-
-<p align="right"><a href="#top">⬆️ back to top</a></p>
 
 </div>
 
 ---
 
 <div align="center">
-
-<a id="contact"></a>
 
 ### 📬 Let's connect
 
