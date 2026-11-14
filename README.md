@@ -8,7 +8,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-swadeshrp-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swadeshrp/)
 [![Email](https://img.shields.io/badge/Email-swadeshpanda95%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:swadeshpanda95@gmail.com)
-[![Featured project](https://img.shields.io/badge/Featured%20project-dbt%20%2B%20Databricks-FF694B?style=for-the-badge&logo=dbt&logoColor=white)](https://github.com/swadeshpanda/Thelook-ecommerce-dbt-databricks)
+[![Featured projects](https://img.shields.io/badge/Featured%20projects-dbt%20%2B%20Databricks%20%2B%20Airflow-FF694B?style=for-the-badge&logo=dbt&logoColor=white)](#-featured-projects)
 
 ![Status](https://img.shields.io/badge/status-open%20to%20full--time%20roles-2ea44f?style=flat-square)
 ![Location](https://img.shields.io/badge/based%20in-Berlin-0a7ea4?style=flat-square)
@@ -86,7 +86,12 @@ flowchart LR
 
 ---
 
-## ⭐ Featured project
+## ⭐ Featured projects
+
+| Project | What it shows | Stack |
+|---|---|---|
+| 🛍️ **[TheLook E-Commerce Analytics](https://github.com/swadeshpanda/Thelook-ecommerce-dbt-databricks)** | Dimensional modelling: raw CSVs → tested star schema → live AI/BI dashboard | dbt · Databricks · SQL · Jinja |
+| 🏪 **[Walmart Lakehouse Pipeline](https://github.com/swadeshpanda/Walmart_Airflow_DBT_Project)** | Orchestration: PostgreSQL → Databricks medallion layers → SCD2 dimensions, scheduled with Airflow in Docker | dbt · Databricks · Airflow · Docker · PostgreSQL |
 
 <div align="center">
 
@@ -139,6 +144,60 @@ flowchart LR
 
 </details>
 
+<br>
+
+<div align="center">
+
+### 🏪 [Walmart Lakehouse Pipeline: dbt + Databricks + Airflow](https://github.com/swadeshpanda/Walmart_Airflow_DBT_Project)
+
+*Orchestrated ELT: PostgreSQL → Databricks bronze / silver / gold → tested SCD Type 2 dimensions, run by Airflow in Docker*
+
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Jinja](https://img.shields.io/badge/Jinja-B41717?style=flat-square&logo=jinja&logoColor=white)
+
+</div>
+
+```mermaid
+flowchart LR
+    PG[("PostgreSQL<br/>raw tables")] --> BR[("Bronze")]
+    BR --> SI[("Silver<br/>incremental + one big table")]
+    SI --> GO[("Gold<br/>fact + SCD2 dimensions")]
+    AF{{"Airflow in Docker"}} -.->|"orchestrates"| BR
+    AF -.-> SI
+    AF -.-> GO
+```
+
+<details>
+<summary><b>🔎 What I built (click to expand)</b></summary>
+
+<br>
+
+- 🔌 **Ingestion into bronze**: Databricks connected to PostgreSQL, with a Databricks job that copies the raw tables; Airflow triggers it through the SDK and waits for it to finish
+- 🔁 **6 incremental silver models** that merge on a unique key and only process rows newer than the last load
+- 🧱 **One big table** generated from a Jinja list, so adding a source table is a one-entry change
+- 🕰️ **5 SCD Type 2 dimensions** built with dbt snapshots, plus a `fact_orders` table
+- ✅ **Data tests as quality gates** between layers, so bad data stops the pipeline
+- 🐳 **Airflow 3 in Docker Compose** (Celery executor) running a 10-task DAG from ingestion to gold
+- 🔐 **No secrets in the repo**: tokens come from environment variables, with `.env.example` templates
+
+</details>
+
+<details>
+<summary><b>🧠 Design choices I'm proud of (click to expand)</b></summary>
+
+<br>
+
+- **Medallion layers in separate schemas**, with an overridden `generate_schema_name` macro for clean names (`silver_t`, `silver_b`, `gold`)
+- **Wait for ingestion before transforming**: the DAG polls the Databricks job, so dbt never runs on stale data
+- **History kept where it matters**: SCD Type 2 dimensions with `dbt_valid_from` / `dbt_valid_to`
+- **Ephemeral staging models** that are inlined into the snapshots instead of creating extra tables
+
+</details>
+
 ---
 
 ## 🎯 What I'm focused on
@@ -156,7 +215,7 @@ flowchart LR
 <div align="center">
 
 ![Followers](https://img.shields.io/github/followers/swadeshpanda?style=for-the-badge&logo=github&color=0a7ea4)
-![Repos](https://img.shields.io/badge/public%20repos-14-8a63d2?style=for-the-badge&logo=github)
+![Repos](https://img.shields.io/badge/public%20repos-15-8a63d2?style=for-the-badge&logo=github)
 ![Stars](https://img.shields.io/github/stars/swadeshpanda/Thelook-ecommerce-dbt-databricks?style=for-the-badge&logo=github&color=E67E22&label=project%20stars)
 
 </div>
